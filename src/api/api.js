@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_BASE || "http://localhost:3000";
+const BASE = process.env.VITE_API_BASE || "http://localhost:3000";
 
 function authHeaders() {
   const token = localStorage.getItem("token");
